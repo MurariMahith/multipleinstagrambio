@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+//common styles
+
+.break 
+{
+    flex-basis: 100%;
+    height: 0;
+}
+
+.img-border-radius-10
+{
+    border-radius: 10px;
+}
+
+.img-250
+{
+    width: 250px;
+    height: 250px;
+    border-radius: 40px;
+}
+
+.flex-center
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
