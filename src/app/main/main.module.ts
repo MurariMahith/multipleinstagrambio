@@ -16,15 +16,22 @@ import * as FusionCharts from 'fusioncharts';
 import * as Widgets from 'fusioncharts/fusioncharts.charts';
 // Load fusion theme
 import * as Fusion from 'fusioncharts/themes/fusioncharts.theme.fint'
+import { SortablejsModule } from 'angular-sortablejs';
 
 // Add dependencies to FusionChartsModule
 FusionChartsModule.fcRoot(FusionCharts, Widgets, Fusion)
+
+//import { DragulaModule } from 'ng2-dragula';
+
+//import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   imports: [
     CommonModule,
     MainRoutingModule,
-    FusionChartsModule
+    FusionChartsModule,
+    SortablejsModule
+    //DragDropModule
   ],
   declarations: [DashboardComponent, AddBioItemComponent, AllBioItemsComponent, MainComponent, HeaderNavigationComponent]
 })

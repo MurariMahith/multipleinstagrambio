@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/models/User';
+import { Users } from 'src/app/services/UserJson';
 
 @Component({
   selector: 'app-all-bio-items',
@@ -7,9 +9,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllBioItemsComponent implements OnInit {
 
-  constructor() { }
+  constructor() {  }
+
+   list1=["planning","designing","developing","testing"]
+   list2 = [];
+
+   bioUser : User;
 
   ngOnInit() {
+
+    this.bioUser = Users[0];
+
   }
+
+  updateSequence()
+  {
+    console.log("called");
+  }
+
 
 }

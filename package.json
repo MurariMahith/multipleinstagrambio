@@ -13,6 +13,7 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "^6.1.0",
+    "@angular/cdk": "^12.1.4",
     "@angular/common": "^6.1.0",
     "@angular/compiler": "^6.1.0",
     "@angular/core": "^6.1.0",
@@ -23,6 +24,7 @@
     "@angular/pwa": "^0.6.8",
     "@angular/router": "^6.1.0",
     "@angular/service-worker": "^6.1.0",
+    "angular-sortablejs": "2.7.0",
     "angular4-fusioncharts": "^1.0.0",
     "bootstrap": "^5.0.2",
     "bulma": "^0.9.3",
@@ -30,7 +32,9 @@
     "font-awesome": "^4.7.0",
     "fusioncharts": "^3.12.2",
     "jquery": "^3.6.0",
+    "ng2-dragula": "^2.1.1",
     "rxjs": "6.0.0",
+    "sortablejs": "^1.14.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

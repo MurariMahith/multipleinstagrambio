@@ -30,9 +30,12 @@ import * as FusionCharts from 'fusioncharts';
 import * as Widgets from 'fusioncharts/fusioncharts.charts';
 // Load fusion theme
 import * as Fusion from 'fusioncharts/themes/fusioncharts.theme.fint'
+import { SortablejsModule } from 'angular-sortablejs';
 
 // Add dependencies to FusionChartsModule
 FusionChartsModule.fcRoot(FusionCharts, Widgets, Fusion)
+
+//import { DragulaModule } from 'ng2-dragula';
 
 @NgModule({
   declarations: [
@@ -40,13 +43,15 @@ FusionChartsModule.fcRoot(FusionCharts, Widgets, Fusion)
     HomeComponent,
     HeaderComponent,
     LoginComponent,
-    GettingStartedComponent
+    GettingStartedComponent,
+    //DragulaModule
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MainModule,
     FusionChartsModule,
+    SortablejsModule.forRoot({ animation: 150 }),
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

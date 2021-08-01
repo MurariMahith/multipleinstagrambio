@@ -8,7 +8,7 @@ const routes: Routes = [
   {path: 'bio/:name',  component: HomeComponent },
   {path: '404', component: HomeComponent},
   {path: 'get', component: GettingStartedComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' }
+  { path: '', redirectTo: '/bio', pathMatch: 'full' }
 ];
 
 @NgModule({

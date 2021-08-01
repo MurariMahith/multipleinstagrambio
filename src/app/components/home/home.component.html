@@ -19,7 +19,8 @@
 
     </div>
   
-    <span *ngFor="let bio of bioUser.bios">
+    <!-- <span [sortablejs]="bioUser.bios"> -->
+      <span *ngFor="let bio of bioUser.bios">
         <a class="a-deco-none" href="{{bio.link}}">
             <div class="glass flex-center">
                 <div class="d-flex bd-highlight">
@@ -35,7 +36,9 @@
                 </div>
             </div>
         </a>
-    </span>
+      </span>
+    <!-- </span> -->
+
 
   
     

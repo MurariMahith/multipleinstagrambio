@@ -1,3 +1,19 @@
-<p>
-  all-bio-items works!
-</p>
+<div class="total flex-center" style="color: white;">
+  <span [sortablejs]="bioUser.bios" (dragend)="updateSequence()">
+    <div class="glass-univ" *ngFor="let bio of bioUser.bios">
+      <h1>{{bio.name}}</h1>
+    </div>
+  </span>
+
+</div>
+
+<div class="matList1" [sortablejs]="list1">
+  <div *ngFor="let task1 of list1">
+      {{task1}}
+  </div>
+</div>
+<div class="matList2"  [sortablejs]="list2">
+  <div *ngFor="let task2 of list2" >
+      {{task2}}
+  </div>
+</div>
