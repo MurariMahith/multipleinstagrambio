@@ -24,6 +24,7 @@ export class AllBioItemsComponent implements OnInit {
 
   updateSequence()
   {
+    console.log(this.bioUser.bios)
     console.log("called");
   }
 

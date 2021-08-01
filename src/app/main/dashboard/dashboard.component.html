@@ -1,62 +1,70 @@
-<div class="container" style="margin: 20px 20px;width: auto;">
-  <h1 class="text-center"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</h1>
-</div>
+<div style="margin-top:52px" class="total">
 
-<div class="neumorphic-div-white flex-center" style="background-color: white;margin: 40px 40px;padding: 20px;width: auto;">
-
-  <h6>Total Visits</h6>
-  <span class="break"></span>
-  <h1>24</h1>
-  <span class="break"></span>
-  <h6>Total Visits</h6>
-  <span class="break"></span>
-  <h1>35</h1>
-</div>
-
-<div class="container" style="margin: 20px 20px;width: auto;">
-  <h3 class="text-center"><i class="fa fa-bar-chart" aria-hidden="true"></i> Total Visits</h3>
-</div>
-
-<div class="chart neumorphic-div-white flex-center" id="total bio clicks" style="margin: 40px 40px;width: auto;height: 300px;">
-  <fusioncharts
-  width="275"
-  height="275"
-  type="column3d"
-  [dataSource]="totalBioDataSource"
-  >
-
-  </fusioncharts>
-</div>
-
-<div class="container" style="margin: 20px 20px;width: auto;">
-  <h5 class="text-center"><i class="fa fa-line-chart" aria-hidden="true"></i> Individual Bio Stats</h5>
-</div>
-
-<div class="chart flex-center" id="for each bio clicks">
-  <div *ngFor="let d of individualbios" class="neumorphic-div-white flex-center" style="margin: 40px 40px;width: auto;padding: 20px;width: 300px;">
-    
-    <h1>
-      <!-- <img src="{{d.bio.photourl}}" width="50" height="50"> -->
-      <img src="./../../../assets/logos/logo.png" class="img-40">
-      {{d.bio.name | titlecase}}
-    </h1>
-
+  <div class="container" style="margin: 20px 20px;width: auto;">
+    <h1 class="text-center"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</h1>
+  </div>
+  
+  <div class="neumorphic-div-white flex-center" style="background-color: white;margin: 40px 40px;padding: 20px;width: auto;">
+  
+    <h6>Total Visits</h6>
+    <span class="break"></span>
+    <h1>24</h1>
     <span class="break"></span>
     <h6>Total Visits</h6>
     <span class="break"></span>
-    <h1>{{d.totalClicks}}</h1>
-    <span class="break"></span>
-    <fusioncharts
-    width="275"
-    height="275"
-    type="line"
-    [dataSource]="d.dataSource"
-    >
-  
-    </fusioncharts>
+    <h1>35</h1>
   </div>
   
+  <div class="container" style="margin: 20px 20px;width: auto;">
+    <h3 class="text-center"><i class="fa fa-bar-chart" aria-hidden="true"></i> Total Visits</h3>
+  </div>
+  
+  <span class="flex-center">
+    <div class="chart neumorphic-div-white flex-center" id="total bio clicks" style="margin: 40px 40px;width: 300px;height: 300px;">
+      <fusioncharts
+      width="275"
+      height="275"
+      type="column3d"
+      [dataSource]="totalBioDataSource"
+      >
+    
+      </fusioncharts>
+    </div>
+    
+  </span>
+  
+  <div class="container" style="margin: 20px 20px;width: auto;">
+    <h5 class="text-center"><i class="fa fa-line-chart" aria-hidden="true"></i> Individual Bio Stats</h5>
+  </div>
+  
+  <div class="chart flex-center" id="for each bio clicks">
+    <div *ngFor="let d of individualbios" class="neumorphic-div-white flex-center" style="margin: 40px 40px;width: auto;padding: 20px;width: 300px;">
+      
+      <h1>
+        <!-- <img src="{{d.bio.photourl}}" width="50" height="50"> -->
+        <img src="./../../../assets/logos/logo.png" class="img-40">
+        {{d.bio.name | titlecase}}
+      </h1>
+  
+      <span class="break"></span>
+      <h6>Total Visits</h6>
+      <span class="break"></span>
+      <h1>{{d.totalClicks}}</h1>
+      <span class="break"></span>
+      <fusioncharts
+      width="275"
+      height="275"
+      type="line"
+      [dataSource]="d.dataSource"
+      >
+    
+      </fusioncharts>
+    </div>
+    
+  </div>
+
 </div>
+
 
   <!--types
   bar2d
