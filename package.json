@@ -23,8 +23,12 @@
     "@angular/pwa": "^0.6.8",
     "@angular/router": "^6.1.0",
     "@angular/service-worker": "^6.1.0",
+    "angular4-fusioncharts": "^1.0.0",
+    "bootstrap": "^5.0.2",
     "bulma": "^0.9.3",
     "core-js": "^2.5.4",
+    "font-awesome": "^4.7.0",
+    "fusioncharts": "^3.12.2",
     "jquery": "^3.6.0",
     "rxjs": "6.0.0",
     "zone.js": "~0.8.26"

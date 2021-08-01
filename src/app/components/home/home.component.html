@@ -1,7 +1,61 @@
-<div class="flex-center xyz" style="min-height: 100vh;">
-    <h1 style="font-size:30px;font-weight: bolder;color: black;">Multiple Insta Bio</h1>
-    <span class="break"></span>
-    <img class="img-250" style="border: 0.5px solid white;" src="../../../assets/logos/logo.png">
-    <span class="break"></span>
-    <h6 style="font-size:25px;color: black;">Coming soon...</h6>
+<div *ngIf="userFound" class="total flex-center">
+
+    <div class="main-heading">
+        <a class="a-deco-none" href="{{bioUser.mainProfilLink}}">
+            <div class="glass2 flex-center">
+                <div class="d-flex bd-highlight">
+                  <div class="p-2 bd-highlight align-self-center">
+                    <!-- <img src="../../../assets/logos/logo.png" class="img-40"> -->
+                  </div>
+                  <div class="p-2 flex-grow-1 align-self-center bd-highlight">
+                    <h2 style="margin: 0;padding: 0;">{{bioUser.userName}}</h2>
+                  </div>
+                  <div class="p-2 align-self-center bd-highlight">
+                    <!--<h5 style="margin: 0;padding: 0;"><i class="fa fa-chevron-right" aria-hidden="true"></i></h5> -->
+                  </div>
+                </div>
+            </div>
+        </a>
+
+    </div>
+  
+    <span *ngFor="let bio of bioUser.bios">
+        <a class="a-deco-none" href="{{bio.link}}">
+            <div class="glass flex-center">
+                <div class="d-flex bd-highlight">
+                  <div class="p-2 bd-highlight align-self-center">
+                    <img src="{{bio.photoUrl}}" class="img-40">
+                  </div>
+                  <div class="p-2 flex-grow-1 align-self-center bd-highlight">
+                    <h2 style="margin: 0;padding: 0;">{{bio.name | titlecase}}</h2>
+                  </div>
+                  <div class="p-2 align-self-center bd-highlight">
+                    <!--<h5 style="margin: 0;padding: 0;"><i class="fa fa-chevron-right" aria-hidden="true"></i></h5> -->
+                  </div>
+                </div>
+            </div>
+        </a>
+    </span>
+
+  
+    
+  
+    
+    <!-- <div class="glass flex-center">
+      <h1>Instagram</h1>
+    </div> -->
+</div>
+
+<div *ngIf="!userFound" class="total flex-center">
+    <div class="glass flex-center">
+        <h1 class="text-center">Bio of "{{bioUserNameParam}}" <br>Not Found.</h1>
+    </div>
+
+    <div routerLink="/get" style="position: fixed;bottom: 30px;display: flex;justify-content: center;width: 90%;">
+        <div class="glass flex-center" style="width: auto;">
+            <h1 class="text-center">Home</h1>
+        </div>
+    </div>
+
+    
 </div>

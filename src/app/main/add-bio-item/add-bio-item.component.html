@@ -1,3 +1,35 @@
-<p>
-  add-bio-item works!
-</p>
+<div class="total flex-center" style="color: white;">
+  <div class="glass-univ">
+    <div class="header">
+      <h1 class="text-center">Add Bio</h1>
+      <hr style="border-top: 1px solid white;">
+      <div class="form">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Name to display</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Name to display" required>
+            <small id="emailHelp" class="form-text">We'll never share your email with anyone else.</small>
+          </div><br>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Link for Bio</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Raw Link" required>
+          </div><br>
+          <div class="form-group">
+            <label for="file-upload">Photo to display near this Bio</label><br>
+            <!-- <input type="file" id="file-upload" class="form-control-file" accept="Image/*"><br> -->
+            <label class="custom-file-upload">
+              Image Upload<br>
+              <input type="file" id="file-upload" class="form-control-file" accept="Image/*">
+              
+            </label><br>
+            <small id="emailHelp" class="form-text">If no photo is uploaded your default profile picture will be used</small>
+          </div><br>
+          <div class="flex-center">
+            <button type="submit" class="btn btn-primary">Add Bio to your Wall</button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

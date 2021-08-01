@@ -12,6 +12,28 @@ import { GettingStartedComponent } from './components/getting-started/getting-st
 
 import { MainModule } from './main/main.module';
 
+// import { FusionChartsModule } from "angular-fusioncharts";
+
+// // Import FusionCharts library and chart modules
+// import * as FusionCharts from "fusioncharts";
+// import * as charts from "fusioncharts/fusioncharts.charts";
+// import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
+
+// // Pass the fusioncharts library and chart modules
+// FusionChartsModule.fcRoot(FusionCharts, charts, FusionTheme);
+
+import { FusionChartsModule } from 'angular4-fusioncharts';
+
+// Load FusionCharts
+import * as FusionCharts from 'fusioncharts';
+// Load Charts module
+import * as Widgets from 'fusioncharts/fusioncharts.charts';
+// Load fusion theme
+import * as Fusion from 'fusioncharts/themes/fusioncharts.theme.fint'
+
+// Add dependencies to FusionChartsModule
+FusionChartsModule.fcRoot(FusionCharts, Widgets, Fusion)
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +46,7 @@ import { MainModule } from './main/main.module';
     BrowserModule,
     AppRoutingModule,
     MainModule,
+    FusionChartsModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],

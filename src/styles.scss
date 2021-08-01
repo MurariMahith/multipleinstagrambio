@@ -3,15 +3,77 @@
 
 //common styles
 
+body
+{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.a-deco-none
+{
+    text-decoration: none;
+}
+
 .break 
 {
     flex-basis: 100%;
     height: 0;
 }
 
+.glassmorphism-div 
+{
+    backdrop-filter: blur(2px) saturate(171%);
+    -webkit-backdrop-filter: blur(2px) saturate(171%);
+    background-color: rgba(17, 25, 40, 0.71);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.glass-univ
+{
+    backdrop-filter: blur(3px) saturate(200%);
+    -webkit-backdrop-filter: blur(5px) saturate(200%);
+    background-color: rgba(17, 25, 40, 0.4);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    // backdrop-filter: blur(8px) saturate(200%);
+    // -webkit-backdrop-filter: blur(8px) saturate(200%);
+    // background-color: rgba(0, 0, 0, 0.42);
+    // border-radius: 12px;
+    //border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.neumorphic-div
+{
+    -webkit-border-radius: 50px; 
+    border-radius: 50px; 
+    background: #D1D8EC;
+    -webkit-box-shadow: 12px 12px 24px #b2b8c9,
+    -12px -12px 24px #f0f8ff;
+    box-shadow: 12px 12px 24px #b2b8c9,
+    -12px -12px 24px #f0f8ff;
+}
+
+.neumorphic-div-white
+{
+    -webkit-border-radius: 50px; 
+    border-radius: 20px; 
+    background: #ffffff;
+    -webkit-box-shadow: 12px 12px 24px #b2b8c9,
+    -12px -12px 24px #ffffff;
+    box-shadow: 12px 12px 24px #b2b8c9,
+    -12px -12px 24px #ffffff;
+}
+
 .img-border-radius-10
 {
     border-radius: 10px;
+}
+
+.img-40
+{
+    height: 40px;
+    width: 40px;
+    border-radius: 5px;
 }
 
 .img-250

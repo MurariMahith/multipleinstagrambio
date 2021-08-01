@@ -1,8 +1,8 @@
 <!-- <div class="header">
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://bulma.io">
-        <img class="img-border-radius-10" src="../../../assets/logos/logo.png" width="28" height="35px">
+      <a class="navbar-item" routerLink="/main">
+        <img class="img-border-radius-10" src="../../../assets/logos/logo.png" width="28">
         <h3> Multiple Insta bio</h3>
       </a>
   
@@ -14,12 +14,12 @@
     </div>
   
     <div id="navbarBasicExample" class="navbar-menu" #navMenu>
-      <div class="navbar-start" (click)="toggleNavbar()">
-        <a class="navbar-item" routerLink="/home">
-          Home
+      <div class="navbar-start">
+        <a class="navbar-item" routerLink="/Dashboard">
+          Dashboard
         </a>
   
-        <a class="navbar-item">
+        <a class="navbar-item" routerLink="/add">
           Documentation
         </a>
   
@@ -61,3 +61,12 @@
     </div>
   </nav>
 </div> -->
+
+
+<div class="scrollmenu">
+  <a class="nav-link btnm" routerLink="/main">DashBoard</a>
+  <a class="nav-link btnm" routerLink="/main/all" routerLinkActive="active-link">My Bios</a>
+  <a class="nav-link btnm" routerLink="/main/add" routerLinkActive="active-link">Add Bio</a>
+  <a class="nav-link btnm" routerLink="/" routerLinkActive="active-link">Home</a>
+  <!-- <a class="nav-link btnm" routerLink="/addList" routerLinkActive="active-link">Introduction</a> -->
+</div>

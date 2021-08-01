@@ -1,0 +1,43 @@
+.total
+{
+    background-image: url('../../../assets/bg-images/night-sky2.jpg');
+    background-position:center;
+    min-height: 95vh;
+    padding: 30px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    padding: 0;
+    margin: 0;
+}
+
+.header
+{
+    padding: 10px;
+}
+
+input, input:focus
+{
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    color: white;
+
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
