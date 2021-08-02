@@ -1,26 +1,41 @@
-<div style="margin-top:52px" class="total">
+<div style="margin-top:62px;background-color: #D1D8EC;" class="total">
 
-  <div class="container" style="margin: 20px 20px;width: auto;">
-    <h1 class="text-center"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</h1>
-  </div>
+  <br>
+  <h1 class="text-center"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</h1>
   
-  <div class="neumorphic-div-white flex-center" style="background-color: white;margin: 40px 40px;padding: 20px;width: auto;">
+  <!-- <span class="flex-center">
+    <div class="neumorphic neumorphic--pressed variation2 pressed flex-center" style="margin: 40px 40px;padding: 20px;width: 300px;">
   
-    <h6>Total Visits</h6>
-    <span class="break"></span>
-    <h1>24</h1>
-    <span class="break"></span>
-    <h6>Total Visits</h6>
-    <span class="break"></span>
-    <h1>35</h1>
-  </div>
+      <h6>Total Visits</h6>
+      <span class="break"></span>
+      <h1>24</h1>
+      <span class="break"></span>
+      <h6>Total Visits</h6>
+      <span class="break"></span>
+      <h1>35</h1>
+    </div>
+  </span> -->
+
   
-  <div class="container" style="margin: 20px 20px;width: auto;">
-    <h3 class="text-center"><i class="fa fa-bar-chart" aria-hidden="true"></i> Total Visits</h3>
-  </div>
+  <!-- <h3 class="text-center"><i class="fa fa-bar-chart" aria-hidden="true"></i> Total Visits</h3> -->
   
   <span class="flex-center">
-    <div class="chart neumorphic-div-white flex-center" id="total bio clicks" style="margin: 40px 40px;width: 300px;height: 300px;">
+
+    <div class="neumorphic neumorphic--pressed variation2 pressed flex-center" style="margin: 40px 40px;padding: 20px;width: 300px;">
+  
+      <h6>Total Visits</h6>
+      <span class="break"></span>
+      <h1>24</h1>
+      <span class="break"></span>
+      <h6>Total Visits</h6>
+      <span class="break"></span>
+      <h1>35</h1>
+    </div>
+
+    <div class="chart neumorphic neumorphic--pressed variation2 pressed flex-center" id="total bio clicks" style="margin: 40px 40px;padding: 40px;width: 300px;">
+      
+      <h3 class="text-center"><i class="fa fa-bar-chart" aria-hidden="true"></i> Total Visits</h3>
+      
       <fusioncharts
       width="275"
       height="275"
@@ -33,12 +48,10 @@
     
   </span>
   
-  <div class="container" style="margin: 20px 20px;width: auto;">
-    <h5 class="text-center"><i class="fa fa-line-chart" aria-hidden="true"></i> Individual Bio Stats</h5>
-  </div>
+  <h5 class="text-center"><i class="fa fa-line-chart" aria-hidden="true"></i> Individual Bio Stats</h5>
   
   <div class="chart flex-center" id="for each bio clicks">
-    <div *ngFor="let d of individualbios" class="neumorphic-div-white flex-center" style="margin: 40px 40px;width: auto;padding: 20px;width: 300px;">
+    <div *ngFor="let d of individualbios" class="neumorphic neumorphic--pressed variation2 pressed flex-center" style="margin: 40px 40px;width: auto;padding: 40px;width: 300px;">
       
       <h1>
         <!-- <img src="{{d.bio.photourl}}" width="50" height="50"> -->
@@ -54,7 +67,7 @@
       <fusioncharts
       width="275"
       height="275"
-      type="line"
+      type="column3d"
       [dataSource]="d.dataSource"
       >
     
